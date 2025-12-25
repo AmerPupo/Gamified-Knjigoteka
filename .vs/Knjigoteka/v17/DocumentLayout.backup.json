@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6D8079-1F02-4DF5-BE96-009A66D1F540}|Knjigoteka.Services\\Knjigoteka.Services.csproj|c:\\users\\jasar\\desktop\\diplomski\\knjigoteka-rs2\\knjigoteka.services\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6D8079-1F02-4DF5-BE96-009A66D1F540}|Knjigoteka.Services\\Knjigoteka.Services.csproj|solutionrelative:knjigoteka.services\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6D8079-1F02-4DF5-BE96-009A66D1F540}|Knjigoteka.Services\\Knjigoteka.Services.csproj|c:\\users\\jasar\\desktop\\diplomski\\knjigoteka-rs2\\knjigoteka.services\\services\\borrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6D8079-1F02-4DF5-BE96-009A66D1F540}|Knjigoteka.Services\\Knjigoteka.Services.csproj|solutionrelative:knjigoteka.services\\services\\borrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBC03E44-ECAE-4F89-B1B6-FC5F6E065513}|Knjigoteka.WebAPI\\Knjigoteka.WebAPI.csproj|c:\\users\\jasar\\desktop\\diplomski\\knjigoteka-rs2\\knjigoteka.webapi\\controllers\\onboardingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBC03E44-ECAE-4F89-B1B6-FC5F6E065513}|Knjigoteka.WebAPI\\Knjigoteka.WebAPI.csproj|solutionrelative:knjigoteka.webapi\\controllers\\onboardingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6D8079-1F02-4DF5-BE96-009A66D1F540}|Knjigoteka.Services\\Knjigoteka.Services.csproj|c:\\users\\jasar\\desktop\\diplomski\\knjigoteka-rs2\\knjigoteka.services\\services\\branchinvertoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6D8079-1F02-4DF5-BE96-009A66D1F540}|Knjigoteka.Services\\Knjigoteka.Services.csproj|solutionrelative:knjigoteka.services\\services\\branchinvertoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6D8079-1F02-4DF5-BE96-009A66D1F540}|Knjigoteka.Services\\Knjigoteka.Services.csproj|c:\\users\\jasar\\desktop\\diplomski\\knjigoteka-rs2\\knjigoteka.services\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6D8079-1F02-4DF5-BE96-009A66D1F540}|Knjigoteka.Services\\Knjigoteka.Services.csproj|solutionrelative:knjigoteka.services\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6D8079-1F02-4DF5-BE96-009A66D1F540}|Knjigoteka.Services\\Knjigoteka.Services.csproj|c:\\users\\jasar\\desktop\\diplomski\\knjigoteka-rs2\\knjigoteka.services\\services\\rabbitmqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6D8079-1F02-4DF5-BE96-009A66D1F540}|Knjigoteka.Services\\Knjigoteka.Services.csproj|solutionrelative:knjigoteka.services\\services\\rabbitmqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B6D8079-1F02-4DF5-BE96-009A66D1F540}|Knjigoteka.Services\\Knjigoteka.Services.csproj|c:\\users\\jasar\\desktop\\diplomski\\knjigoteka-rs2\\knjigoteka.services\\services\\onboardingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B6D8079-1F02-4DF5-BE96-009A66D1F540}|Knjigoteka.Services\\Knjigoteka.Services.csproj|solutionrelative:knjigoteka.services\\services\\onboardingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{538FAB06-1C77-4AFF-9299-C46B6A52C1F2}|Knjigoteka.Model\\Knjigoteka.Model.csproj|c:\\users\\jasar\\desktop\\diplomski\\knjigoteka-rs2\\knjigoteka.model\\responses\\onboardingitemstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{538FAB06-1C77-4AFF-9299-C46B6A52C1F2}|Knjigoteka.Model\\Knjigoteka.Model.csproj|solutionrelative:knjigoteka.model\\responses\\onboardingitemstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{538FAB06-1C77-4AFF-9299-C46B6A52C1F2}|Knjigoteka.Model\\Knjigoteka.Model.csproj|c:\\users\\jasar\\desktop\\diplomski\\knjigoteka-rs2\\knjigoteka.model\\helpers\\onboardingdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{538FAB06-1C77-4AFF-9299-C46B6A52C1F2}|Knjigoteka.Model\\Knjigoteka.Model.csproj|solutionrelative:knjigoteka.model\\helpers\\onboardingdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 202,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Services\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "Knjigoteka.Services\\Services\\BookService.cs",
+              "ToolTip": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Services\\Services\\BookService.cs",
+              "RelativeToolTip": "Knjigoteka.Services\\Services\\BookService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAUwBcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T18:49:30.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BranchInvertoryService.cs",
+              "DocumentMoniker": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Services\\Services\\BranchInvertoryService.cs",
+              "RelativeDocumentMoniker": "Knjigoteka.Services\\Services\\BranchInvertoryService.cs",
+              "ToolTip": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Services\\Services\\BranchInvertoryService.cs",
+              "RelativeToolTip": "Knjigoteka.Services\\Services\\BranchInvertoryService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwNIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T19:19:05.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReservationService.cs",
+              "DocumentMoniker": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Services\\Services\\ReservationService.cs",
+              "RelativeDocumentMoniker": "Knjigoteka.Services\\Services\\ReservationService.cs",
+              "ToolTip": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Services\\Services\\ReservationService.cs",
+              "RelativeToolTip": "Knjigoteka.Services\\Services\\ReservationService.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAAwL4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T19:17:12.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RabbitMQService.cs",
+              "DocumentMoniker": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Services\\Services\\RabbitMQService.cs",
+              "RelativeDocumentMoniker": "Knjigoteka.Services\\Services\\RabbitMQService.cs",
+              "ToolTip": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Services\\Services\\RabbitMQService.cs",
+              "RelativeToolTip": "Knjigoteka.Services\\Services\\RabbitMQService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T19:17:11.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BorrowingService.cs",
+              "DocumentMoniker": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Services\\Services\\BorrowingService.cs",
+              "RelativeDocumentMoniker": "Knjigoteka.Services\\Services\\BorrowingService.cs",
+              "ToolTip": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Services\\Services\\BorrowingService.cs",
+              "RelativeToolTip": "Knjigoteka.Services\\Services\\BorrowingService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAcwNwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T19:16:58.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OnboardingController.cs",
+              "DocumentMoniker": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.WebAPI\\Controllers\\OnboardingController.cs",
+              "RelativeDocumentMoniker": "Knjigoteka.WebAPI\\Controllers\\OnboardingController.cs",
+              "ToolTip": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.WebAPI\\Controllers\\OnboardingController.cs",
+              "RelativeToolTip": "Knjigoteka.WebAPI\\Controllers\\OnboardingController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T18:27:02.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OnboardingItemStatus.cs",
+              "DocumentMoniker": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Model\\Responses\\OnboardingItemStatus.cs",
+              "RelativeDocumentMoniker": "Knjigoteka.Model\\Responses\\OnboardingItemStatus.cs",
+              "ToolTip": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Model\\Responses\\OnboardingItemStatus.cs",
+              "RelativeToolTip": "Knjigoteka.Model\\Responses\\OnboardingItemStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T16:01:10.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OnboardingService.cs",
+              "DocumentMoniker": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Services\\Services\\OnboardingService.cs",
+              "RelativeDocumentMoniker": "Knjigoteka.Services\\Services\\OnboardingService.cs",
+              "ToolTip": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Services\\Services\\OnboardingService.cs",
+              "RelativeToolTip": "Knjigoteka.Services\\Services\\OnboardingService.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAIwMQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T15:30:51.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OnboardingDefinitions.cs",
+              "DocumentMoniker": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Model\\Helpers\\OnboardingDefinitions.cs",
+              "RelativeDocumentMoniker": "Knjigoteka.Model\\Helpers\\OnboardingDefinitions.cs",
+              "ToolTip": "C:\\Users\\jasar\\Desktop\\Diplomski\\Knjigoteka-RS2\\Knjigoteka.Model\\Helpers\\OnboardingDefinitions.cs",
+              "RelativeToolTip": "Knjigoteka.Model\\Helpers\\OnboardingDefinitions.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAALoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T15:12:50.926Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

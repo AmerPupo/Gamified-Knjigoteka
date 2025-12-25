@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ReservationEmailConsumer": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

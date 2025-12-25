@@ -1,0 +1,92 @@
+services:
+  knjigoteka-sql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    restart: unless-stopped
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=MySuperStrong!Pass123
+      - MSSQL_PID=Developer
+    ports:
+      - "1401:1433"
+    expose:
+      - 1433
+    networks:
+      - knjigoteka-network
+    volumes:
+      - knjigoteka-sql-data:/var/opt/mssql
+  
+  rabbitmq:
+    image: rabbitmq:3-management
+    restart: unless-stopped
+    environment:
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_USERNAME}
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_PASSWORD}
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - knjigoteka-network
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+    user: "999:999"
+  
+  knjigoteka-api:
+    build:
+      context: .
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings:DefaultConnection=Server=knjigoteka-sql,1433;Database=knjigoteka;User ID=sa;Password=MySuperStrong!Pass123;TrustServerCertificate=True
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_USER=${RABBITMQ_USERNAME}
+      - RABBITMQ_PASSWORD=${RABBITMQ_PASSWORD}
+
+      - Jwt__Key=${Jwt__Key}
+      - Jwt__Issuer=${Jwt__Issuer}
+      - Jwt__Audience=${Jwt__Audience}
+      - Jwt__ExpireMinutes=${Jwt__ExpireMinutes}
+      
+      - Stripe__SecretKey=${Stripe__SecretKey}
+      - Stripe__PublishableKey=${Stripe__PublishableKey}
+    ports:
+      - "7031:8080"
+    networks:
+      - knjigoteka-network
+    depends_on:
+      - knjigoteka-sql
+      - rabbitmq
+    restart: unless-stopped
+   
+  
+  knjigoteka-subscriber:
+    build:
+      context: .
+      dockerfile: ReservationEmailConsumer/Dockerfile
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_USER=${RABBITMQ_USERNAME}
+      - RABBITMQ_PASSWORD=${RABBITMQ_PASSWORD}
+      - RABBITMQ_QUEUE=${RABBITMQ_QUEUE}
+      - SMTP_USERNAME=${SMTP_USERNAME}
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+    networks:
+      - knjigoteka-network
+    depends_on:
+      - rabbitmq
+    restart: unless-stopped
+
+networks:
+  knjigoteka-network:
+    driver: bridge
+
+volumes:
+  knjigoteka-sql-data:
+    driver: local
+  rabbitmq-data:
+    driver: local

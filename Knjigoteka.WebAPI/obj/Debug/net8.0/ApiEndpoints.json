@@ -1,0 +1,2477 @@
+[
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.BookResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.BookSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.BookInsert, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.BookUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Insert",
+    "RelativePath": "api/Books",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "insert",
+        "Type": "Knjigoteka.Model.Requests.BookInsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.BookResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseController\u00602[[Knjigoteka.Model.Responses.BookResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.BookSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/Books",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FTS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "GenreId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "LanguageId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sandbox",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Helpers.PagedResult\u00601[[Knjigoteka.Model.Responses.BookResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.BookResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.BookSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.BookInsert, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.BookUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/Books/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "update",
+        "Type": "Knjigoteka.Model.Requests.BookUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.BookResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.BookResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.BookSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.BookInsert, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.BookUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/Books/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseController\u00602[[Knjigoteka.Model.Responses.BookResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.BookSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetById",
+    "RelativePath": "api/Books/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.BookResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BooksController",
+    "Method": "GetPhoto",
+    "RelativePath": "api/Books/{id}/photo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BooksController",
+    "Method": "UploadPhoto",
+    "RelativePath": "api/Books/{id}/photo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BooksController",
+    "Method": "Recommend",
+    "RelativePath": "api/Books/{id}/recommend",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Knjigoteka.Model.Responses.BookResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BorrowingsController",
+    "Method": "Create",
+    "RelativePath": "api/Borrowings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "Knjigoteka.Model.Requests.BorrowingCreate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.BorrowingResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BorrowingsController",
+    "Method": "All",
+    "RelativePath": "api/Borrowings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Knjigoteka.Model.Responses.BorrowingResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BorrowingsController",
+    "Method": "Delete",
+    "RelativePath": "api/Borrowings/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BorrowingsController",
+    "Method": "Return",
+    "RelativePath": "api/Borrowings/{id}/return",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BorrowingsController",
+    "Method": "ByBranch",
+    "RelativePath": "api/Borrowings/branch/{branchId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "branchId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "sandbox",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Knjigoteka.Model.Responses.BorrowingResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BorrowingsController",
+    "Method": "Mine",
+    "RelativePath": "api/Borrowings/mine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Knjigoteka.Model.Responses.BorrowingResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BorrowingsController",
+    "Method": "ByUser",
+    "RelativePath": "api/Borrowings/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Knjigoteka.Model.Responses.BorrowingResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.BranchResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.BranchSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.BranchInsert, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.BranchUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Insert",
+    "RelativePath": "api/Branches",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "insert",
+        "Type": "Knjigoteka.Model.Requests.BranchInsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.BranchResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseController\u00602[[Knjigoteka.Model.Responses.BranchResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.BranchSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/Branches",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FTS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Helpers.PagedResult\u00601[[Knjigoteka.Model.Responses.BranchResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.BranchResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.BranchSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.BranchInsert, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.BranchUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/Branches/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "update",
+        "Type": "Knjigoteka.Model.Requests.BranchUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.BranchResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.BranchResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.BranchSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.BranchInsert, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.BranchUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/Branches/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseController\u00602[[Knjigoteka.Model.Responses.BranchResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.BranchSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetById",
+    "RelativePath": "api/Branches/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.BranchResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BranchesController",
+    "Method": "GetReport",
+    "RelativePath": "api/Branches/{id}/report",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "Knjigoteka.Model.Requests.BranchReportRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.BranchReportResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BranchInventoryController",
+    "Method": "Get",
+    "RelativePath": "api/branches/inventory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FTS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BranchId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "BookId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SupportsBorrowing",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sandbox",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Helpers.PagedResult\u00601[[Knjigoteka.Model.Responses.BranchInventoryResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BranchInventoryController",
+    "Method": "Upsert",
+    "RelativePath": "api/branches/inventory",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "branchId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "request",
+        "Type": "Knjigoteka.Model.Requests.BranchInventoryUpsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BranchInventoryController",
+    "Method": "Delete",
+    "RelativePath": "api/branches/inventory/{bookId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "branchId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BranchInventoryController",
+    "Method": "GetAvailabilityByBookId",
+    "RelativePath": "api/branches/inventory/availability/{bookId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "sandbox",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.CartController",
+    "Method": "Get",
+    "RelativePath": "api/Cart",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.CartResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.CartController",
+    "Method": "Upsert",
+    "RelativePath": "api/Cart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Knjigoteka.Model.Requests.CartItemUpsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.CartResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.CartController",
+    "Method": "Clear",
+    "RelativePath": "api/Cart",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.CartController",
+    "Method": "Remove",
+    "RelativePath": "api/Cart/{bookId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.CityResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.CitySearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.CityInsert, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.CityUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Insert",
+    "RelativePath": "api/City",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "insert",
+        "Type": "Knjigoteka.Model.Requests.CityInsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.CityResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseController\u00602[[Knjigoteka.Model.Responses.CityResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.CitySearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/City",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FTS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Helpers.PagedResult\u00601[[Knjigoteka.Model.Responses.CityResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.CityResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.CitySearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.CityInsert, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.CityUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/City/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "update",
+        "Type": "Knjigoteka.Model.Requests.CityUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.CityResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.CityResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.CitySearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.CityInsert, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.CityUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/City/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseController\u00602[[Knjigoteka.Model.Responses.CityResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.CitySearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetById",
+    "RelativePath": "api/City/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.CityResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.EmployeeResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.EmployeeSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.EmployeeInsert, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.EmployeeUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Insert",
+    "RelativePath": "api/Employee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "insert",
+        "Type": "Knjigoteka.Model.Requests.EmployeeInsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.EmployeeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseController\u00602[[Knjigoteka.Model.Responses.EmployeeResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.EmployeeSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/Employee",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NameFTS",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BranchId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "HiredAfter",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "HiredBefore",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Helpers.PagedResult\u00601[[Knjigoteka.Model.Responses.EmployeeResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.EmployeeResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.EmployeeSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.EmployeeInsert, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.EmployeeUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/Employee/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "update",
+        "Type": "Knjigoteka.Model.Requests.EmployeeUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.EmployeeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.EmployeeResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.EmployeeSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.EmployeeInsert, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.EmployeeUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/Employee/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseController\u00602[[Knjigoteka.Model.Responses.EmployeeResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.EmployeeSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetById",
+    "RelativePath": "api/Employee/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.EmployeeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.GenresController",
+    "Method": "Get",
+    "RelativePath": "api/Genres",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Helpers.PagedResult\u00601[[Knjigoteka.Model.Responses.GenreResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.GenresController",
+    "Method": "Insert",
+    "RelativePath": "api/Genres",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "insert",
+        "Type": "Knjigoteka.Model.Requests.GenreInsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.GenreResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.GenresController",
+    "Method": "GetById",
+    "RelativePath": "api/Genres/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.GenreResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.GenresController",
+    "Method": "Update",
+    "RelativePath": "api/Genres/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "update",
+        "Type": "Knjigoteka.Model.Requests.GenreUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.GenreResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.GenresController",
+    "Method": "Delete",
+    "RelativePath": "api/Genres/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.LanguagesController",
+    "Method": "Insert",
+    "RelativePath": "api/Languages",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "insert",
+        "Type": "Knjigoteka.Model.Requests.LanguageInsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.LanguageResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseController\u00602[[Knjigoteka.Model.Responses.LanguageResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.LanguageSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/Languages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Helpers.PagedResult\u00601[[Knjigoteka.Model.Responses.LanguageResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.LanguagesController",
+    "Method": "GetById",
+    "RelativePath": "api/Languages/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.LanguageResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.LanguagesController",
+    "Method": "Update",
+    "RelativePath": "api/Languages/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "update",
+        "Type": "Knjigoteka.Model.Requests.LanguageUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.LanguageResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.LanguagesController",
+    "Method": "Delete",
+    "RelativePath": "api/Languages/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.NotificationRequestController",
+    "Method": "Create",
+    "RelativePath": "api/NotificationRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Knjigoteka.Model.Requests.NotificationRequestCreate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.NotificationRequestResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.NotificationRequestController",
+    "Method": "All",
+    "RelativePath": "api/NotificationRequest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Knjigoteka.Model.Responses.NotificationRequestResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.NotificationRequestController",
+    "Method": "Delete",
+    "RelativePath": "api/NotificationRequest/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.NotificationRequestController",
+    "Method": "MyRequests",
+    "RelativePath": "api/NotificationRequest/mine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Knjigoteka.Model.Responses.NotificationRequestResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.OnboardingController",
+    "Method": "RegisterAttempt",
+    "RelativePath": "api/Onboarding/attempt",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "Knjigoteka.Model.Requests.OnboardingAttemptRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.OnboardingItemStatus",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.OnboardingController",
+    "Method": "Complete",
+    "RelativePath": "api/Onboarding/complete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Knjigoteka.WebAPI.Controllers.OnboardingController\u002BCompleteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.OnboardingController",
+    "Method": "MarkHintShown",
+    "RelativePath": "api/Onboarding/hint-shown",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "Knjigoteka.Model.Requests.OnboardingHintRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.OnboardingItemStatus",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.OnboardingController",
+    "Method": "GetOverview",
+    "RelativePath": "api/Onboarding/overview",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.OrderController",
+    "Method": "GetAll",
+    "RelativePath": "api/Order",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Knjigoteka.Model.Responses.OrderResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.OrderController",
+    "Method": "Approve",
+    "RelativePath": "api/Order/{id}/approve",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.OrderController",
+    "Method": "Reject",
+    "RelativePath": "api/Order/{id}/reject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.OrderController",
+    "Method": "Checkout",
+    "RelativePath": "api/Order/checkout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Knjigoteka.Model.Requests.OrderCreate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.OrderResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.OrderController",
+    "Method": "GetMyOrders",
+    "RelativePath": "api/Order/mine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Knjigoteka.Model.Responses.OrderResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.PenaltyController",
+    "Method": "GetUserPenalties",
+    "RelativePath": "api/penalties/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Knjigoteka.Model.Entities.Penalty, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.PenaltyController",
+    "Method": "GetPoints",
+    "RelativePath": "api/penalties/{userId}/points",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.ReservationResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.ReservationSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.ReservationRequest, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.ReservationRequest, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Insert",
+    "RelativePath": "api/Reservations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "insert",
+        "Type": "Knjigoteka.Model.Requests.ReservationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.ReservationResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseController\u00602[[Knjigoteka.Model.Responses.ReservationResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.ReservationSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/Reservations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "BranchId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ActiveOnly",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sandbox",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Helpers.PagedResult\u00601[[Knjigoteka.Model.Responses.ReservationResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.ReservationResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.ReservationSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.ReservationRequest, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.ReservationRequest, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/Reservations/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "update",
+        "Type": "Knjigoteka.Model.Requests.ReservationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.ReservationResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.ReservationResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.ReservationSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.ReservationRequest, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.ReservationRequest, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/Reservations/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseController\u00602[[Knjigoteka.Model.Responses.ReservationResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.ReservationSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetById",
+    "RelativePath": "api/Reservations/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.ReservationResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.ReservationsController",
+    "Method": "Cancel",
+    "RelativePath": "api/Reservations/{id}/cancel",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.ReservationsController",
+    "Method": "ExpirePending",
+    "RelativePath": "api/Reservations/expire",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.RestockRequestResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.RestockRequestSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.RestockRequestCreate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.RestockRequestUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Insert",
+    "RelativePath": "api/RestockRequests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "insert",
+        "Type": "Knjigoteka.Model.Requests.RestockRequestCreate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.RestockRequestResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseController\u00602[[Knjigoteka.Model.Responses.RestockRequestResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.RestockRequestSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/RestockRequests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BookId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "BranchId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmployeeId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Helpers.PagedResult\u00601[[Knjigoteka.Model.Responses.RestockRequestResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.RestockRequestsController",
+    "Method": "Delete",
+    "RelativePath": "api/RestockRequests/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.RestockRequestResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.RestockRequestSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.RestockRequestCreate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.RestockRequestUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/RestockRequests/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "update",
+        "Type": "Knjigoteka.Model.Requests.RestockRequestUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.RestockRequestResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseController\u00602[[Knjigoteka.Model.Responses.RestockRequestResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.RestockRequestSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetById",
+    "RelativePath": "api/RestockRequests/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.RestockRequestResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.RestockRequestsController",
+    "Method": "Approve",
+    "RelativePath": "api/RestockRequests/{id}/approve",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.RestockRequestsController",
+    "Method": "Reject",
+    "RelativePath": "api/RestockRequests/{id}/reject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.RestockRequestsController",
+    "Method": "GetByBranch",
+    "RelativePath": "api/RestockRequests/bybranch",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Knjigoteka.Model.Responses.RestockRequestResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.ReviewResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.ReviewSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.ReviewInsert, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.ReviewUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Insert",
+    "RelativePath": "api/Review",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "insert",
+        "Type": "Knjigoteka.Model.Requests.ReviewInsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.ReviewResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseController\u00602[[Knjigoteka.Model.Responses.ReviewResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.ReviewSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/Review",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BookId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "MinRating",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaxRating",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Helpers.PagedResult\u00601[[Knjigoteka.Model.Responses.ReviewResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.ReviewResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.ReviewSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.ReviewInsert, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.ReviewUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/Review/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "update",
+        "Type": "Knjigoteka.Model.Requests.ReviewUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.ReviewResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseCRUDController\u00604[[Knjigoteka.Model.Responses.ReviewResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.ReviewSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.ReviewInsert, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.Requests.ReviewUpdate, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/Review/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.BaseController\u00602[[Knjigoteka.Model.Responses.ReviewResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Knjigoteka.Model.SearchObjects.ReviewSearchObject, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetById",
+    "RelativePath": "api/Review/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.ReviewResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReviewController",
+    "Method": "GetByBook",
+    "RelativePath": "api/Review/book/{bookId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Knjigoteka.Model.Responses.ReviewResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReviewController",
+    "Method": "GetMine",
+    "RelativePath": "api/Review/mine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Knjigoteka.Model.Responses.ReviewResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SaleController",
+    "Method": "Create",
+    "RelativePath": "api/Sale",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Knjigoteka.Model.Requests.SaleInsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SaleController",
+    "Method": "GetAll",
+    "RelativePath": "api/Sale",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "branchId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "dateFrom",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "dateTo",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.StripeController",
+    "Method": "CreateCheckoutSession",
+    "RelativePath": "api/Stripe/create-checkout-session",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Knjigoteka.WebAPI.Controllers.CreateCheckoutSessionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.StripeController",
+    "Method": "CreatePaymentIntent",
+    "RelativePath": "api/Stripe/create-payment-intent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Knjigoteka.WebAPI.Controllers.StripeController\u002BCreatePaymentIntentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserController",
+    "Method": "GetAll",
+    "RelativePath": "api/User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "Knjigoteka.Model.SearchObjects.UserSearchObject",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Knjigoteka.Model.Responses.UserResponse, Knjigoteka.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/User/change-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Knjigoteka.Model.Requests.ChangePasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.ChangePasswordResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserController",
+    "Method": "EditProfile",
+    "RelativePath": "api/User/edit-profile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Knjigoteka.Model.Requests.EditProfileRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.EditProfileResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Knjigoteka.Model.Requests.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.LoginResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "api/User/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Knjigoteka.Model.Responses.UserResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserController",
+    "Method": "Register",
+    "RelativePath": "api/User/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Knjigoteka.Model.Requests.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Knjigoteka.WebAPI.Controllers.SeedController",
+    "Method": "Init",
+    "RelativePath": "Seed/init",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
