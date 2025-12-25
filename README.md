@@ -47,7 +47,7 @@ Lozinka: Admin123!
 
 Radnik
 
-Email: radnik@knjigoteka.local
+Email: radnik3@knjigoteka.local
 
 Lozinka: Radnik123!
 
